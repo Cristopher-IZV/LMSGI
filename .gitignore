@@ -2,3 +2,5 @@
 
 #Ignore images folders
 /images
+#Ignore xml files
+*.xml

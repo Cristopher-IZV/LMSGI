@@ -1,0 +1,20 @@
+
+<mensaje>
+
+    <remitente>
+        <nombre>Microsoft</nombre>
+        <email>microsoftLPD@duck.com</email>
+    </remitente>
+    
+    <destinatario>
+        <nombre>Usuario Random</nombre>
+        <email>dann95@duck.com </email>
+    </destinatario>
+
+    <asunto>Actualización de política de privacidad</asunto>
+
+    <texto>
+        <parrafo>Se han actualizado las políticas de privacidad entra a <www class="microsoft LPD"></www>.com</parrafo>
+    </texto>
+
+</mensaje>
