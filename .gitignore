@@ -1,5 +1,9 @@
 #Ignore incomplete tasks
 
+
 #Ignore images folders
 /images
 /xml files
+
+#Ignore files
+*.xml
