@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicio 13</title>
+    <link rel="icon" type="image/x-icon" href="file:///C:/Users/Usuario/Documents/LMSGI/LMSGI/lenguajesMarcas/images/favicon4.ico">
+</head>
+
+<body>
+    <h1>Birra a domicilio</h1>
+    <h2>Para realizar su pedido, rellene el siguiente formulario</h2>
+    <form action="/action_page.php" target="_blank">
+        <fieldset style="width: 600px; height: 200px;">
+            <legend>Datos personales y de envío</legend>
+            <label for="nombre">Nombre: </label> <input type="text" id="nombre" name="nombre" value=""> <br> 
+            <label for="apellidos">Apellidos: </label> <input type="text" id="apellidos" name="apellidos" value=""> <br> 
+            <label for="domicilio">Domicilio: </label> <input type="text" id="domicilio" name="domicilio" value=""> <br> 
+            <label for="localidad">Localidad: </label> <input type="text" id="localidad" name="localidad" value=""> <br>
+            <label for="cp">Código postal: </label> <input type="text" id="cp" name="cp" value=""> <br>
+            <label for="tlf">Teléfono: </label> <input type="tel" id="tlf" name="tlf" placeholder="123-45-67-89" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required> <br>
+            <label for="email">Correo: </label> <input type="email" id="email" name="email" value="tuemail@email.com"> <br>
+        </fieldset>
+        
+        <br>
+        
+        <fieldset style="width: 600px; height: 50px;">
+            <legend>Elija la opción de entrega</legend>
+            <input type="radio" id="local" name="envio2" value="local"> <label for="local">Recoger en el local</label> <br>
+            <input type="radio" id="edomicilio" name="envio2" value="edomicilio2"> <label for="edomicilio">Envío a domicilio</label> <br>
+        </fieldset>
+
+        <br>
+
+        <fieldset style="width: 600px; height: 50px;">
+            <legend>¿Quieres spam?</legend>
+            <input type="checkbox" id="mail"> <label for="mail">Por mail</label> <br>
+            <input type="checkbox" id="telefono"> <label for="telefono">Por teléfono</label> <br>
+        </fieldset>
+
+        <br>
+
+        <fieldset style="width: 600px; height: 330px;">
+            <legend>Elija tamaño, marca y extras de la birra</legend>
+
+
+
+            <label type="size">Tamaño de la birra: </label> 
+            <select id="size" name="size">
+                <option value="1">15 cl</option>
+                <option value="2">33 cl</option>
+                <option value="3">50 cl</option>
+                <option value="4">1 litro</option>
+            </select>
+
+            <label for="cantidad">Cantidad (máximo 5)</label> 
+            <input type="number" id="cantidad" name="cantidad" min="1" max="5"> <br>
+
+            <label type="marca">Marca: </label>
+            <select id="marca" name="marca">
+                <option value="5">Corona</option>
+                <option value="6">Heineken</option>
+                <option value="7">Budweiser</option>
+                <option value="8">Ginness</option>
+                <option value="9">Dos Equis</option>
+            </select> 
+            
+            <br>
+            <br>
+
+            <label for="opciones">Extras del pedido: </label>
+            <select id="opciones" name="opciones" size="3" multiple>
+                <option value="copa">Copa magnum</option>
+                <option value="gorro">Gorro cervezero</option>
+                <option value="alc">Alcoholímetro</option>
+                <option value="munchi">Munchi</option>
+                <option value="efert">Efervescente</option>
+            </select>
+
+            <br>
+            <br>
+            <p>Añadir comentario:</p>
+            <textarea name="mensaje" style="width:600px; height:100px; resize: none" >Birra mu' fría, etc.</textarea>
+
+        </fieldset>
+
+        <br>
+        <br>
+        <input type="submit">
+        <br>
+        <br>
+    </form>
+</body>
+</html>

@@ -2,54 +2,58 @@
 <html lang="en">
 
 <style>
-    div.absolute {
+    div.absolute1 {
         position: absolute;
-
-        left: 50%;
-        width: 200px;
-        height: 100px;
+        left: 1;
+        width: 500px;
+        height: 200px;
         border: 1px solid black;
+        border-collapse: collapse;
+
     }
 
-    div.relative {
-        position: relative;
-        right: 50%;
-        width: 200px;
-        height: 100px;
+    div.absolute2 {
+        position: absolute;
+        left: 510px;
+        width: 500px;
+        height: 200px;
         border: 1px solid black;
+        border-collapse: collapse;
     }
 </style>
 
 <head>
-    <title>Ejercicio7.1 (Pendiente de arreglar..)</title>
+    <title>Ejercicio7.1 con div</title>
 </head>
 
 <body>
+    <div>
+        <div style="border: 1px solid black;border-collapse: collapse; height: 100%; width: 1000px; text-align:center; left:0"
+            ;>
+            <h1>Alineación de fútbol</h1>
+        </div>
 
-    <div style="border: 1px solid black;border-collapse: collapse; height: 100px; text-align: center;">
-        <h1>Alineación de fútbol</h1>
-    </div>
+        <div class="absolute1">
+            <h2>Equipo de futbol 1</h2>
+            <ul>
+                <li>Colega 1</li>
+                <li>Colega 2</li>
+                <li>Colega 3</li>
+                <li>Colega 4</li>
+                <li>Colega 5</li>
+            </ul>
+        </div>
 
-    <div class="absolute">
-        <h2>Equipo de futbol 1</h2>
-        <ul>
-            <li>Colega 1</li>
-            <li>Colega 2</li>
-            <li>Colega 3</li>
-            <li>Colega 4</li>
-            <li>Colega 5</li>
-        </ul>
-    </div>
-
-    <div class="relative">
-        <h2>Equipo de futbol 2</h2>
-        <ul>
-            <li>Colega 1</li>
-            <li>Colega 2</li>
-            <li>Colega 3</li>
-            <li>Colega 4</li>
-            <li>Colega 5</li>
-        </ul>
+        <div class="absolute2">
+            <h2>Equipo de futbol 2</h2>
+            <ul>
+                <li>Colega 1</li>
+                <li>Colega 2</li>
+                <li>Colega 3</li>
+                <li>Colega 4</li>
+                <li>Colega 5</li>
+            </ul>
+        </div>
     </div>
 
 </body>
