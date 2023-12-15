@@ -1,0 +1,16 @@
+/**Etiqueta ID # **/
+#capa1{
+    border:solid black;
+    width: 50%;
+    font-size: em;
+}
+#capa2{ 
+    border:solid red;
+    width: 33%;
+    font-size: 1.2em;
+}
+#capa3{
+    border: solid blue;
+    width: 25%;
+    font-size:0.8em;
+}
