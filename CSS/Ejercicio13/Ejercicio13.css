@@ -1,0 +1,43 @@
+
+#capa1 {
+    background-color: red;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#capa2 {
+    background-color: gray;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#capa3 {
+    background-color: gray;
+    width: 100%;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    overflow: scroll;
+}
+
+#capa4 {
+    background-color: grey;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    margin: 10px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 30px;
+    padding: 20px;
+}
