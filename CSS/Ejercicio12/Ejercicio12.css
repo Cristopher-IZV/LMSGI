@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+#capa1 {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+#capa2 {
+    width: 18%;
+    height: 100%;
+    float: left;
+    background-color: grey;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+#capa3 {
+    width: 80%;
+    height: 500px;
+    float:right;
+    background-color: cornflowerblue;
+    margin: 5px;
+    padding: 10px;
+    overflow: scroll;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 5px;
+    padding: 5px;
+}
