@@ -1,0 +1,51 @@
+#cabecera {
+    float: left;
+    width: 65%;
+    height: 150px;
+    background-color:beige;
+}
+
+#cabecera2 {
+    float: right;
+    width: 35%;
+    height: 150px;
+    background-color: beige;
+}
+
+#body {
+    float: right;
+    width: 100%;
+    height: 100%;
+    padding:20ox;
+    background-color: bisque;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#estilo1 {
+    width: 50%;
+    height: 100%;
+
+    float:left;
+}
+#estilo2{
+    width: 50%;
+    height: 100%;
+
+    float:right;
+}
+
+#pie {
+    width: 100%;
+    height: 250%;
+    padding:20px;
+    text-align: center;
+    background-color: beige;
+    clear: both; /**Poner clear-both para que el pie ocupe el**/
+}
+
+
+
+
+
+
