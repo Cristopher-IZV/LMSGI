@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    height: 70px;
+    line-height: 70px;
+    background: gray;
+    color: aqua;
+    font-size: 3em;
+    margin-bottom: 50px;
+
+}
+
+section{
+    background: violet;
+}
+
+article{
+    display: flex;
+    justify-content: flex-start;
+}
+
+img{
+    border: dashed 1px burlywood;
+    margin: 10px;
+    padding: 20px;
+}
