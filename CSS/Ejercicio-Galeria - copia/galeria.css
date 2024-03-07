@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+    background-color: grey;
+}
+
+
+.grid-container>* {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(350px, 1fr));
+    grid-auto-rows: minmax(350px, auto);
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+}
+
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clase1 {
+
+    background-color: grey;
+}
+
+.clase2 {
+    background-color: violet;
+}
+
+.clase3 {
+    background-color: red;
+}
+
+.clase4 {
+    background-color: skyblue;
+}
+
+.clase5 {
+    background-color: aqua;
+}
+
+.clase6 {
+    background-color: peru;
+}
+
+.clase7 {
+    background-color:lawngreen;
+}
+
+.clase8 {
+    background-color: blue;
+    width: 700px;
+}

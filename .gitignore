@@ -3,6 +3,7 @@
 
 #Ignore folders
 /xml files
+/Pruebas_Flex
 
 #Ignore files
 *.xml

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+    background-color: grey;
+  }
+
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns:max-content(auto auto auto auto auto auto);
+}
+
+.clase1{
+    background-color: #85aedd;
+}
+.clase2{
+    background-color: #85aedd;
+}
+.clase3{
+    background-color: #85aedd;
+}
+.clase4{
+    background-color: #85aedd;
+}
+.clase5{
+    background-color: #85aedd;
+}
+.clase6{ 
+    background-color: #85aedd;
+}
+

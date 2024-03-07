@@ -24,7 +24,11 @@ body{
     background: rgb(7, 37, 7);
 }
 
-.one{height: 100px;}
-.two{height: 150px; margin-left:auto;}
-.three{height: 160px;}
-.four{height: 170px;}
+.one{
+    height: 100px;
+    width: 200px;
+    flex-basis: auto;
+}
+.two{height: 150px; /*width: 200px; margin-left:auto;*/ fex: 1 0 auto;} 
+.three{height:  160px; /*width: 200px;*/ fex: 1 0 auto;}
+.four{height: 170px; width: 200px;}
