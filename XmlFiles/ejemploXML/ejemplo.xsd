@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="biblioteca">
+
+        <xs:complexType>
+
+            <xs:sequence>
+                <xs:element name="libro" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!--<xs:all>
+                            Para que el orden sea distinto al del xml-->
+                            <!--<xs:choice>
+                            Para que pongas varias opciones en la raiz(xsd), y puedas poner SOLO UNA
+                            de esas en el (xml)-->
+                            <xs:element name="titulo" type="xs:string" />
+                            <xs:element name="autor" type="xs:string" />
+
+                            <xs:element name="editorial" type="xs:string" />
+                            <xs:element name="tapa" />
+                            <xs:element name="precio" />
+                        </xs:sequence>
+                        <xs:attribute name="ISBN" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+
+        </xs:complexType>
+
+    </xs:element>
+
+    <xs:simpleType name="tipo_precio">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0" />
+            <xs:maxExclusive value="120" />
+            <xs:totalDigits value="4" />
+            <xs:fractionDigits value="2" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo_tapa">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="dura" />
+            <xs:enumeration value="blanda" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipo_tapa2">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="dura" />
+            <xs:enumeration value="blanda" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipo_editorial2">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="codigo"></xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="tipo_isbn">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-9]){10}" /> <!-- El asterisco no obliga a poner nada y un + 1 como
+            min-->
+        </xs:restriction>
+    </xs:simpleType>
+
+
+</xs:schema>
