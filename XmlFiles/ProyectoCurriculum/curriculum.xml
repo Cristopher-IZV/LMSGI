@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<curriculum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="curriculum.xsd">
+
+    <datos_personales>
+
+        <nombre>Pablo</nombre>
+        <apellidos>Pablito Clavito</apellidos>
+        <fecha_nacimiento></fecha_nacimiento>
+        <lugar_nacimiento></lugar_nacimiento>
+        <nacionalidades></nacionalidades>
+        <nif>77777777-E</nif>
+        <nombre_archivo></nombre_archivo>
+
+    </datos_personales>
+
+    <datos_contacto>
+
+        <direccion>
+            <tipo_via></tipo_via>
+            <nombre_via></nombre_via>
+            <num_via></num_via> <!-- Optativo-->
+            <portal></portal> <!-- Optativo-->
+            <escalera></escalera> <!-- Optativo-->
+            <piso></piso> <!-- Optativo-->
+            <puerta></puerta> <!-- Optativo-->
+            <cp></cp>
+        </direccion>
+
+        <pais></pais>
+        <email></email>
+        <telefono_movil></telefono_movil>
+        <telefono_fijo></telefono_fijo> <!-- Optativo-->
+
+    </datos_contacto>
+
+
+    <datos_contacto_adicionales>
+        <pagina_web></pagina_web> <!-- Optativo-->
+        <cuenta_rss></cuenta_rss> <!-- Optativo-->
+    </datos_contacto_adicionales>
+
+    <formacion_academica> <!-- Para cada una de los estudios realizadso-->
+        <nombre></nombre>
+        <lugar_realizacion></lugar_realizacion>
+        <fecha_inicio></fecha_inicio>
+        <fecha_fin></fecha_fin>
+    </formacion_academica>
+
+    <idiomas><!-- Para cada idioma-->
+        <nombre_idioma></nombre_idioma>
+        <nivel_expresion_oral></nivel_expresion_oral> <!-- Optativo-->
+        <nivel_compresion_oral></nivel_compresion_oral> <!-- Optativo-->
+        <nivel_expresion_escrito></nivel_expresion_escrito> <!-- Optativo-->
+        <nivel_comprension_escrito></nivel_comprension_escrito> <!-- Optativo-->
+        <titulo_acreditativo></titulo_acreditativo><!-- Optativo-->
+        <nive_titulo></nive_titulo>
+    </idiomas>
+
+    <expericencia_laboral> <!-- Para cada experiencia laboral-->
+        <lugar></lugar>
+        <puesto_desempeñado></puesto_desempeñado>
+        <fecha_comienzo></fecha_comienzo>
+        <fecha_de_fin></fecha_de_fin>
+    </expericencia_laboral>
+
+    <competencias_socioProfesionales><!-- Para cada competencia-->
+        <nombre_competencia></nombre_competencia>
+        <nivel_competencia></nivel_competencia>
+    </competencias_socioProfesionales>
+
+    <datos_adicionales>
+        <aficiones></aficiones>
+        <disp_viajar></disp_viajar>
+        <vehiculo_propio></vehiculo_propio>
+        <permisos_conducir></permisos_conducir>
+    </datos_adicionales>
+
+</curriculum>
