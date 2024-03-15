@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="curriculum" type="T_curriculum"></xs:element>
+
+    <xs:complexType name="T_curriculum">
+        <xs:sequence>
+            <xs:element name="datos_personales" type="T_datos_personales" />
+            <xs:element name="datos_contacto" type="T_datos_contacto" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="T_datos_personales">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="apellidos" type="xs:string" />
+            <xs:element name="fecha_nacimiento" type="xs:string" />
+            <xs:element name="lugar_nacimiento" type="xs:string" />
+            <xs:element name="nacionalidades" type="xs:string" />
+            <xs:element name="nif" type="T_nif" />
+            <xs:element name="nombre_archivo" type="xs:token" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="T_nif">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]-[A-Z]" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="T_datos_contacto">
+        <xs:sequence>
+            <xs:element name="direccion" type="T_direccion" />
+            <xs:element name="pais" type="xs:string" />
+            <xs:element name="email" type="T_mail" />
+            <xs:element name="telefono_movil" type="T_movil" />
+            <xs:element name="telefono_fijo" type="T_movil" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="T_direccion">
+        <xs:sequence>
+            <xs:element name="tipo_via" type="xs:string" />
+            <xs:element name="nombre_via" type="xs:string" />
+            <xs:element name="num_via" type="xs:string" />
+
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
