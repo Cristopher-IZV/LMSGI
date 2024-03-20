@@ -1,79 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <curriculum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="curriculum.xsd">
+
 
     <datos_personales>
 
         <nombre>Pablo</nombre>
-        <apellidos>Pablito Clavito</apellidos>
-        <fecha_nacimiento></fecha_nacimiento>
-        <lugar_nacimiento></lugar_nacimiento>
-        <nacionalidades></nacionalidades>
-        <nif>77777777-E</nif>
-        <nombre_archivo></nombre_archivo>
+        <apellidos>Perez Perez</apellidos>
+        <fecha_nacimiento>1995-05-15</fecha_nacimiento>
+        <lugar_nacimiento>Tarragona</lugar_nacimiento>
+        <nacionalidades>Catalana</nacionalidades>
+        <identificacion>43434343P</identificacion> <!-- Puede ser NIF o-->
+        <nombre_archivo>foto.jpg</nombre_archivo>
 
     </datos_personales>
 
     <datos_contacto>
 
         <direccion>
-            <tipo_via></tipo_via>
-            <nombre_via></nombre_via>
-            <num_via></num_via> <!-- Optativo-->
-            <portal></portal> <!-- Optativo-->
-            <escalera></escalera> <!-- Optativo-->
-            <piso></piso> <!-- Optativo-->
-            <puerta></puerta> <!-- Optativo-->
-            <cp></cp>
+            <tipo_via>Calle</tipo_via>
+            <nombre_via>Gran Vía</nombre_via>
+            <numero>1</numero> <!-- Optativo-->
+            <portal>14</portal> <!-- Optativo-->
+            <escalera>4</escalera> <!-- Optativo-->
+            <piso>3</piso> <!-- Optativo-->
+            <puerta>2</puerta> <!-- Optativo-->
+            <cp>08049</cp>
         </direccion>
 
-        <pais></pais>
-        <email></email>
-        <telefono_movil></telefono_movil>
-        <telefono_fijo></telefono_fijo> <!-- Optativo-->
+        <pais>Valencia</pais>
+        <email>pablo@gmail.com</email>
+        <telefono_movil>666666666</telefono_movil>
+        <telefono_fijo>666666666</telefono_fijo> <!-- Optativo-->
 
     </datos_contacto>
 
 
     <datos_contacto_adicionales>
-        <pagina_web></pagina_web> <!-- Optativo-->
-        <cuenta_rss></cuenta_rss> <!-- Optativo-->
+        <pagina_web>www.pablo.com</pagina_web> <!-- Optativo-->
+        <cuenta_rss>linkedin.com/PabloPerezPerez</cuenta_rss> <!-- Optativo-->
     </datos_contacto_adicionales>
 
     <formacion_academica> <!-- Para cada una de los estudios realizadso-->
-        <nombre></nombre>
-        <lugar_realizacion></lugar_realizacion>
-        <fecha_inicio></fecha_inicio>
-        <fecha_fin></fecha_fin>
+        <estudio>
+            <nombre>Ingenieria</nombre>
+            <lugar_realizacion>Barcelona</lugar_realizacion>
+            <fecha_inicio>2015-12-12</fecha_inicio>
+            <fecha_fin>2020-12-12</fecha_fin>
+        </estudio>
     </formacion_academica>
 
-    <idiomas><!-- Para cada idioma-->
-        <nombre_idioma></nombre_idioma>
-        <nivel_expresion_oral></nivel_expresion_oral> <!-- Optativo-->
-        <nivel_compresion_oral></nivel_compresion_oral> <!-- Optativo-->
-        <nivel_expresion_escrito></nivel_expresion_escrito> <!-- Optativo-->
-        <nivel_comprension_escrito></nivel_comprension_escrito> <!-- Optativo-->
-        <titulo_acreditativo></titulo_acreditativo><!-- Optativo-->
-        <nive_titulo></nive_titulo>
+    <formacion_academica>
+        <estudio>
+            <nombre>Máster Ingenieria</nombre>
+            <lugar_realizacion>Barcelona</lugar_realizacion>
+            <fecha_inicio>2021-12-12</fecha_inicio>
+            <fecha_fin>2023-12-12</fecha_fin>
+        </estudio>
+    </formacion_academica>
+
+    <idiomas> <!-- Para cada uno de los idiomas-->
+        <idioma>
+            <nombre>Español</nombre>
+            <expresion_oral>alto</expresion_oral>
+            <comprension_oral>alto</comprension_oral>
+            <expresion_escrita>alto</expresion_escrita>
+            <comprension_escrita>alto</comprension_escrita>
+            <titulo_acreditativo></titulo_acreditativo>
+            <nivel>C2</nivel>
+        </idioma>
+    </idiomas>
+
+    <idiomas>
+        <idioma>
+            <nombre>Inglés</nombre>
+            <expresion_oral>alto</expresion_oral>
+            <comprension_oral>alto</comprension_oral>
+            <expresion_escrita>alto</expresion_escrita>
+            <comprension_escrita>alto</comprension_escrita>
+            <titulo_acreditativo>Titulo Acreditativo inglés</titulo_acreditativo>
+            <nivel>C2</nivel>
+        </idioma>
     </idiomas>
 
     <expericencia_laboral> <!-- Para cada experiencia laboral-->
-        <lugar></lugar>
-        <puesto_desempeñado></puesto_desempeñado>
-        <fecha_comienzo></fecha_comienzo>
-        <fecha_de_fin></fecha_de_fin>
+        <experiencia>
+            <lugar>Empresa ABC</lugar>
+            <puesto>Desarrollador de software</puesto>
+            <fecha_inicio>2014-07-01</fecha_inicio>
+            <fecha_fin>2021-12-31</fecha_fin>
+        </experiencia>
+    </expericencia_laboral>
+
+    <expericencia_laboral>
+        <experiencia>
+            <lugar>Empresa CDE</lugar>
+            <puesto>Desarrollador de software</puesto>
+            <fecha_inicio>2014-07-01</fecha_inicio>
+            <fecha_fin>2021-12-31</fecha_fin>
+        </experiencia>
     </expericencia_laboral>
 
     <competencias_socioProfesionales><!-- Para cada competencia-->
-        <nombre_competencia></nombre_competencia>
-        <nivel_competencia></nivel_competencia>
+        <nombre>Trabajo en equipo</nombre>
+        <nivel>5</nivel>
     </competencias_socioProfesionales>
 
-    <datos_adicionales>
-        <aficiones></aficiones>
-        <disp_viajar></disp_viajar>
-        <vehiculo_propio></vehiculo_propio>
-        <permisos_conducir></permisos_conducir>
-    </datos_adicionales>
+    <competencias_socioProfesionales><!-- Para cada competencia-->
+        <nombre>Liderazgo</nombre>
+        <nivel>5</nivel>
+    </competencias_socioProfesionales>
+
+    <datos_adicionales2>
+        <aficiones>Danza</aficiones>
+        <disponibilidad_viajar>true</disponibilidad_viajar>
+        <vehiculo_propio>false</vehiculo_propio>
+        <permisos_conduccion>AM</permisos_conduccion>
+    </datos_adicionales2>
 
 </curriculum>
